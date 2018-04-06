@@ -1,0 +1,38 @@
+/**
+ * For an example
+ * @see https://raw.githubusercontent.com/ben-manes/caffeine/master/gradle/dependencies.gradle
+ */
+ext {
+  versions = [
+    findbugs                          : '3.0.1',
+    lombok                            : '1.16.20',
+    spring_boot                       : '2.0.1.RELEASE',
+  ]
+  test_versions = [
+    hamcrest_optional: '1.0',
+    commons_io       : '2.6'
+  ]
+  plugin_versions = [
+    versions      : '0.17.0',
+    checkstyle    : '8.8',
+    pmd           : '5.8.1',
+    jacoco        : '0.8.0',
+    git_properties: '1.4.21'
+  ]
+
+  libraries = [
+    findbugs_annotations              : "com.google.code.findbugs:annotations:${versions.findbugs}",
+    lombok                            : "org.projectlombok:lombok:${versions.lombok}",
+    spring_boot_starter_web           : "org.springframework.boot:spring-boot-starter-web:${versions.spring_boot}",
+    spring_boot_devtools              : "org.springframework.boot:spring-boot-devtools:${versions.spring_boot}",
+  ]
+  test_libraries = [
+    hamcrest_optional       : "com.github.baev:hamcrest-optional:${test_versions.hamcrest_optional}",
+    spring_boot_starter_test: "org.springframework.boot:spring-boot-starter-test:${versions.spring_boot}"
+  ]
+  gradle_plugins = [
+    versions      : "com.github.ben-manes:gradle-versions-plugin:${plugin_versions.versions}",
+    spring_boot   : "org.springframework.boot:spring-boot-gradle-plugin:${versions.spring_boot}",
+    git_properties: "gradle.plugin.com.gorylenko.gradle-git-properties:gradle-git-properties:${plugin_versions.git_properties}"
+  ]
+}
