@@ -14,9 +14,9 @@ ext {
   ]
   plugin_versions = [
     versions      : '0.17.0',
-    checkstyle    : '8.8',
+    checkstyle    : '8.9',
     pmd           : '5.8.1',
-    jacoco        : '0.8.0',
+    jacoco        : '0.8.1',
     git_properties: '1.4.21'
   ]
 
