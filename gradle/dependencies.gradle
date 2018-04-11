@@ -23,6 +23,7 @@ ext {
   libraries = [
     findbugs_annotations              : "com.google.code.findbugs:annotations:${versions.findbugs}",
     lombok                            : "org.projectlombok:lombok:${versions.lombok}",
+    spring_boot_starter_actuator      : "org.springframework.boot:spring-boot-starter-actuator:${versions.spring_boot}",
     spring_boot_starter_web           : "org.springframework.boot:spring-boot-starter-web:${versions.spring_boot}",
     spring_boot_devtools              : "org.springframework.boot:spring-boot-devtools:${versions.spring_boot}",
   ]

@@ -35,6 +35,7 @@ dependencies {
   //compileOnly libraries.lombok
   compileOnly libraries.findbugs_annotations
 
+  compile libraries.spring_boot_starter_actuator
   compile libraries.spring_boot_starter_web
   compile libraries.spring_boot_devtools
 
