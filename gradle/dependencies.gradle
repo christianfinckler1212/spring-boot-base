@@ -5,15 +5,15 @@
 ext {
   versions = [
     findbugs                          : '3.0.1',
-    lombok                            : '1.16.20',
-    spring_boot                       : '2.0.1.RELEASE',
+    lombok                            : '1.18.0',
+    spring_boot                       : '2.0.3.RELEASE',
   ]
   test_versions = [
     hamcrest_optional: '1.0',
     commons_io       : '2.6'
   ]
   plugin_versions = [
-    versions      : '0.17.0',
+    versions      : '0.20.0',
     checkstyle    : '8.9',
     pmd           : '5.8.1',
     jacoco        : '0.8.1',

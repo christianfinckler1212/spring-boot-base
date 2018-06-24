@@ -31,16 +31,14 @@ repositories {
 
 
 dependencies {
-  // comment in, when lomboks java 10 support is finished
-  //compileOnly libraries.lombok
+  compileOnly libraries.lombok
   compileOnly libraries.findbugs_annotations
 
   compile libraries.spring_boot_starter_actuator
   compile libraries.spring_boot_starter_web
   compile libraries.spring_boot_devtools
 
-  // comment in, when lomboks java 10 support is finished
-  //testCompileOnly libraries.lombok
+  testCompileOnly libraries.lombok
 
   testCompile test_libraries.hamcrest_optional
   testCompile test_libraries.spring_boot_starter_test

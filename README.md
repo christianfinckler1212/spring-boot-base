@@ -9,13 +9,15 @@ This is the app ap1 of team1 of ottos new plattform.
 
 Intellij Java Compiler Settings:
 
-Add following jvm parameter to be able to generate error messages from parameter names:
+Add following jvm parameter to be able to generate error messages from parameter names (For validation errors):
 
     $ -parameters
 
 Build artefact:
 
     $ gradle build
+
+Enable Annotation Processing in IntelliJ settings for lombok
 
 ## Startup
   
